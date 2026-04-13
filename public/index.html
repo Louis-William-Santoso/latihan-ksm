@@ -1,0 +1,162 @@
+<!DOCTYPE html>    <!-- teken ! + enter u/ setup html nya?  -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- yg dalam style is tag dari image kapal-->
+    <style>     
+        body{
+            background-color: rgb(207, 44, 118);
+            margin: 0px;
+        }
+        h1, h2, p{
+            margin-left: 2rem;
+        }
+        #funfactnSkills{
+            display: flex;      
+        }
+        #kapalLucu{
+            border-radius: 20px;
+            height: 5cm;  
+            position: absolute;
+            top: 2rem; 
+            right: 4rem;
+        }
+        .statusBar{
+            border:2px solid rgb(171, 10, 10);
+            width: 7rem;
+            height: 0.9rem;
+            margin: 1rem; 
+            border-radius: 15px;
+            background-color: azure;
+        }
+        #status1{
+            margin-top: 0.2px;
+            background-color: red;
+            height: 0.86rem;
+            width: 5rem;
+            border-radius: 15px;
+        }
+        
+        #status2{
+            margin-top: 0.2px;
+            background-color: red;
+            height: 0.86rem;
+            width: 7rem;
+            border-radius: 15px;
+        }
+        #status3{
+            margin-top: 0.2px;
+            background-color: red;
+            height: 0.86rem;
+            width: 2rem;
+            border-radius: 15px;
+        }
+        #status4{
+            margin-top: 0.2px;
+            background-color: red;
+            height: 0.86rem;
+            width: 4rem;
+            border-radius: 15px;
+        }
+        #pembungkusStatusBar{
+            margin-top: 4rem;
+        }
+        #myProjecto{
+            display: flex;
+            overflow: scroll;
+        }
+        footer{
+            position: static;
+            background-color: rgb(26, 12, 87);
+            margin: 0px;
+            margin-bottom: 0px;
+            height: max-content;
+            padding-bottom: 10px;
+        }
+    </style>
+    <!--absolute = sprt melayang-->
+    <!-- display: flex u/ horizontal penempatannya -->
+    <!-- u/ manggil id pake #, panggil class pakai .-->
+    <!--margin di status bar spy kotak"nya kepisah-->
+    <!---->
+</head>
+<body>  <!-- canvas? di dlm sini bisa di styling --> 
+    <h1>My Portofolio</h1>   <!-- h1 + enter untuk heading-->
+    <ul>  
+        <li>Nama: Fuefue</li>  <!--li*3 + enter-->
+        <li>Umur: 160 tahun</li>
+        <li>Jenis Kelamin: Manusia</li>
+
+        <!-- img + enter -->
+        <img id = "kapalLucu" src="https://png.pngtree.com/png-clipart/20240117/original/pngtree-ship-3d-cute-icon-element-png-image_14128189.png" alt="">
+    </ul>
+
+    <h1>About Me</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias minima sit consequuntur omnis, incidunt accusamus quasi in ad quas. Consectetur harum nobis temporibus repellendus at mollitia odit quas placeat rem?</p>
+    <!-- p + enter untuk paragraf  | lalu lo + enter untuk lorem ipsum-->
+
+    <div id = "funfactnSkills">
+        <!-- h2*2>ul>li*4 + enter--> 
+        <!--press alt and select a baris, spt select multiple dgn shift-->
+         <div>
+            <h2>Fun fact</h2>
+            <ul>
+                <li>suka soto boyolali</li>
+                <li>lagi laper</li>
+                <li>mau lanjut ... lanjut apa, lupa mau ngetik apa</li>
+                <li>having fun rn</li>
+            </ul>
+         </div>
+         <div>
+            <h2>My Skill</h2>
+            <ul>
+                <li>jago procrast</li>
+                <li>bisa makan</li>
+                <li>bisa sikap lilin</li>
+                <li>jago melamun</li>
+            </ul>
+         </div>
+
+         <div id = "pembungkusStatusBar"> <!--bikin progres bar-->
+            <!--class = tag u/ semuanya, id = tag u/ satu orang saja-->
+            <div class = "statusBar">
+                <div id = "status1"></div>
+            </div>
+            <div class = "statusBar">
+                <div id = "status2"></div>
+            </div>
+            <div class = "statusBar">
+                <div id = "status3"></div>
+            </div>
+            <div class = "statusBar">
+                <div id = "status4"></div>
+            </div>
+         </div>
+    </div>
+
+    <h1>My Projects</h1>
+    <div id="myProjecto">
+        <img src="https://my.ubaya.ac.id/img/mhs/160425118_l.jpg" alt="" width = "150">
+        <img src="https://my.ubaya.ac.id/img/mhs/160425119_l.jpg" alt="" width = "150">
+        <img src="https://my.ubaya.ac.id/img/mhs/160425121_l.jpg" alt="" width = "150">
+        <img src="https://my.ubaya.ac.id/img/mhs/160425177_l.jpg" alt="" width = "150">
+        <img src="https://my.ubaya.ac.id/img/mhs/160425900_l.jpg" alt="" width = "150">
+    </div>
+
+    <footer>
+        <!-- li*4>a | a = anchor buat kasih link-->
+        <ul>
+            <li><a href="https://share.google/DXJmYqxwVr1RyLwEe">youtube</a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+        </ul>
+    </footer>
+</body>
+</html>
+
+<!-- node = angka, anode = not angka???-->
+
+<!--in line, internal, external-->
