@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(251, 222, 222);
+            
+        }
+        h1, h2, p{
+            margin-left: 2rem;
+        }
+        #foto{
+            border-radius: 20px;
+            height: 7rem;
+            position: absolute;
+            top: 3rem;
+            right: 4rem;
+        }
+        #funFactAndSkill{
+            display: flex;
+        }
+        #pembungkusStatusBar{
+            margin-top: 4rem;
+        }
+        .statusBar{
+            border: 2px solid black;
+            width: 7rem;
+            height: 0.9rem;
+            margin: 3px;
+            border-radius: 15px;
+            background-color: white;
+        }
+        #status1{
+            margin-top: 0.1px;
+            background-color: red;
+            border-radius: 15px;
+            height: 0.9rem;
+            width: 5rem;
+        }
+        #status2{
+            background-color: red;
+            border-radius: 15px;
+            height: 0.9rem;
+            width: 7rem;
+        }
+        #status3{
+            margin-top: 0.1px;
+            background-color: red;
+            border-radius: 15px;
+            height: 0.9rem;
+            width: 3rem;
+        }
+        #status4{
+            background-color: red;
+            border-radius: 15px;
+            height: 0.9rem;
+            width: 6rem;
+        }
+        #myProject{
+            display: flex;
+            overflow: scroll;
+        }
+        footer{
+            position: static;
+            background-color:  rgb(236, 129, 229);
+            margin: 0px;
+            margin-bottom: 0px;
+            height: max-content;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Portofolio</h1>
+    <ul> 
+        <li>Nama : Siapapun</li>
+        <li>Umur : 19 tahun</li>
+        <li>Jenis Kelamin : Perempuan</li>
+
+        <img id="foto" src="data:image/jpeg;base64,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" alt="">
+    </ul>
+
+    <h1>About Me</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure alias quae aliquam officia qui laudantium ad aspernatur necessitatibus soluta numquam corporis, ullam eaque sint vitae libero illo suscipit quo explicabo.</p>
+
+    <div id="funFactAndSkill">
+        <div>
+            <h2>Fun Fact</h2>
+            <ul>
+                <li>Sangat membantu</li>
+                <li>Keren</li>
+                <li>Baik</li>
+                <li>Hhhhhhhhhhhh</li>
+            </ul>
+        </div>
+        <div>
+            <h2>My Skills</h2>
+            <ul>
+                <li>Bisa baca</li>
+                <li>Bisa tulis</li>
+                <li>Bisa dengar</li>
+                <li>Bisa makan</li>
+            </ul>
+        </div>
+        <div id="pembungkusStatusBar">
+            <div class="statusBar">
+                <div id="status1"></div>
+            </div>
+            <div class="statusBar">
+                <div id="status2"></div>
+            </div>
+            <div class="statusBar">
+                <div id="status3"></div>
+            </div>
+            <div class="statusBar">
+                <div id="status4"></div>
+            </div>
+        </div>
+    </div>
+
+    <h1>My Projects</h1>
+    <div id="myProject">
+        <img src="https://my.ubaya.ac.id/img/mhs/160425006_l.jpg" alt="">
+        <img src="https://my.ubaya.ac.id/img/mhs/160425020_l.jpg" alt="">
+        <img src="https://my.ubaya.ac.id/img/mhs/160425067_l.jpg" alt="">
+        <img src="https://my.ubaya.ac.id/img/mhs/160425132_l.jpg" alt="">
+        <img src="https://my.ubaya.ac.id/img/mhs/160425010_l.jpg" alt="">
+    </div>
+
+    <footer>
+        <ul>
+            <li><a href="https://www.youtube.com/">Youtube</a></li>
+            <li><a href="https://www.youtube.com/">Website</a></li>
+            <li><a href="https://www.youtube.com/">Instagram</a></li>
+            <li><a href="https://www.youtube.com/">Dll</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
