@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(212, 205, 199);
+            margin: 0px;
+        }
+        h1, h2, p{
+            margin-left: 2rem;
+        }
+        #guppy{
+            width: 10rem;
+            height: 10rem;
+            border-radius: 5%;
+            position: absolute;
+            right: 3rem;
+            top: 1rem;
+        }
+        #holder{
+            display: flex;
+            gap: 2rem;
+        }
+        .statusBar{
+            width: 10rem;
+            height: 0.8rem;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 0.4rem;
+            margin: 0.4rem;
+        }
+        #statusBarHolder{
+            margin-top: 3.5rem;
+        }
+        #status1{
+            width: 80%;
+            height: 100%;
+            background-color: rgb(255, 174, 0);
+            border-radius: 5rem;
+        }
+        #status2{
+            width: 60%;
+            height: 100%;
+            background-color: rgb(255, 174, 0);
+            border-radius: 5rem;
+        }
+        #status3{
+            width: 40%;
+            height: 100%;
+            background-color: rgb(255, 174, 0);
+            border-radius: 5rem;
+        }
+        #status4{
+            width: 20%;
+            height: 100%;
+            background-color: rgb(255, 174, 0);
+            border-radius: 5rem;
+        }
+        #image{
+            width: 10rem;
+            height: 10rem;
+        }
+        #projectHolder{
+            margin-left: 2rem;
+        }
+        footer{
+            position: static;
+            background-color: rgb(197, 185, 154);
+            
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Porto</h1>
+    <ul>
+        <li>Nama: Cenneth Wilson Malvin Margono</li>
+        <li>Umur: 19 tahun</li>
+        <li>Pekerjaan: Mahasiswa</li>
+
+        <img id="guppy" src="https://avatars.githubusercontent.com/u/116559838?v=4" alt="Profile Image">
+    </ul>
+
+    <h1>About Me</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa dolore veniam impedit ipsum incidunt error, voluptatem voluptates porro tenetur officia aut laboriosam molestias repellendus ab placeat doloremque enim alias quod!</p>
+
+    <div id="holder">
+        <div>
+            <h2>Fun Facts</h2>
+            <ul>
+                <li>Fact 1</li>
+                <li>Fact 2</li>
+                <li>Fact 3</li>
+                <li>Fact 4</li>
+            </ul>
+        </div>
+        <div>
+            <h2>My Skills</h2>
+            <ul>
+                <li>Skill 1</li>
+                <li>Skill 2</li>
+                <li>Skill 3</li>
+                <li>Skill 4</li>
+            </ul>
+        </div>
+        <div id="statusBarHolder">
+            <div class="statusBar">
+                <div id="status1"></div>
+            </div>
+            <div class="statusBar">
+                <div id="status2"></div>
+            </div>
+            <div class="statusBar">
+                <div id="status3"></div>
+            </div>
+            <div class="statusBar">
+                <div id="status4"></div>
+            </div>
+        </div>
+    </div>
+    <h1>My Projects</h1>
+    <div id="projectHolder">
+        <img src="https://png.pngtree.com/png-clipart/20200401/original/pngtree-gold-number-1-png-image_5330864.jpg" alt="" id="image">
+        <img src="https://static8.depositphotos.com/1338574/829/i/450/depositphotos_8292993-stock-photo-the-number-2-in-gold.jpg" alt="" id="image">
+        <img src="https://png.pngtree.com/png-clipart/20200401/original/pngtree-gold-number-3-png-image_5330868.jpg" alt="" id="image">
+        <img src="https://png.pngtree.com/png-clipart/20200309/ourmid/pngtree-gold-number-4-png-image_2158842.jpg" alt="" id="image">
+        <img src="https://png.pngtree.com/png-clipart/20200309/ourmid/pngtree-gold-number-5-png-image_2158844.jpg" alt="" id="image">
+    </div>
+
+    <footer>
+        <ul>
+            <li><a href="https://www.youtube.com">Youtube</a></li>
+            <li><a href="https://www.example.com">Website</a></li>
+            <li><a href="https://www.instagram.com">Instagram</a></li>
+            <li><a href="https://www.github.com">Github</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
